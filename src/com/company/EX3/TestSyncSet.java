@@ -3,12 +3,11 @@ package com.company.EX3;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Test {
+public class TestSyncSet {
 
     public static void main(String[] args) {
-        MySet<Integer> syncSet = new MySet<>();/*
-        Set<Integer> syncSet = new HashSet<>();*/
 
+        MySet<Integer> syncSet = new MySet<>();
 
         Thread th1 = new Thread(() -> {
            for(int i = 0; i < 1000; i++) {

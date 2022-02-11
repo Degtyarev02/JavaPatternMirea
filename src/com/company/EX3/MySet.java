@@ -18,10 +18,10 @@ public class MySet<T> implements Set<T> {
     }
 
 
-    private final ReadWriteLock lock = new ReentrantReadWriteLock();
+    public final Lock lock = new ReentrantLock();/*
     private final Lock readLock = lock.readLock();
     private final Lock writeLock = lock.writeLock();
-
+*/
     @Override
     public int size() {
         return set.size();
@@ -55,20 +55,20 @@ public class MySet<T> implements Set<T> {
     @Override
     public boolean add(T t) {
         try{
-            writeLock.lock();
+            lock.lock();
             return set.add(t);
         } finally {
-            writeLock.unlock();
+            lock.unlock();
         }
     }
 
     @Override
     public boolean remove(Object o) {
         try{
-            writeLock.lock();
+            lock.lock();
             return set.remove(o);
         } finally {
-            writeLock.unlock();
+            lock.unlock();
         }
     }
 
