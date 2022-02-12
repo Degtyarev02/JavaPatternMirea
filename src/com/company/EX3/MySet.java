@@ -24,32 +24,62 @@ public class MySet<T> implements Set<T> {
 */
     @Override
     public int size() {
-        return set.size();
+        try{
+            lock.lock();
+            return set.size();
+        } finally {
+            lock.unlock();
+        }
     }
 
     @Override
     public boolean isEmpty() {
-        return set.isEmpty();
+        try{
+            lock.lock();
+            return set.isEmpty();
+        } finally {
+            lock.unlock();
+        }
     }
 
     @Override
     public boolean contains(Object o) {
-        return set.contains(o);
+        try{
+            lock.lock();
+            return set.contains(o);
+        } finally {
+            lock.unlock();
+        }
     }
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        try{
+            lock.lock();
+            return set.iterator();
+        } finally {
+            lock.unlock();
+        }
     }
 
     @Override
     public Object[] toArray() {
-        return new Object[0];
+        try{
+            lock.lock();
+            return set.toArray();
+        } finally {
+            lock.unlock();
+        }
     }
 
     @Override
     public <T1> T1[] toArray(T1[] a) {
-        return null;
+        try{
+            lock.lock();
+            return set.toArray(a);
+        } finally {
+            lock.unlock();
+        }
     }
 
     @Override
@@ -74,31 +104,61 @@ public class MySet<T> implements Set<T> {
 
     @Override
     public boolean containsAll(Collection<?> c) {
-        return false;
+        try{
+            lock.lock();
+            return set.containsAll(c);
+        } finally {
+            lock.unlock();
+        }
     }
 
     @Override
     public boolean addAll(Collection<? extends T> c) {
-        return false;
-    }
+        try{
+            lock.lock();
+            return set.addAll(c);
+        } finally {
+            lock.unlock();
+        }    }
 
     @Override
     public boolean retainAll(Collection<?> c) {
-        return false;
+        try{
+            lock.lock();
+            return set.retainAll(c);
+        } finally {
+            lock.unlock();
+        }
     }
 
     @Override
     public boolean removeAll(Collection<?> c) {
-        return false;
+        try{
+            lock.lock();
+            return set.removeAll(c);
+        } finally {
+            lock.unlock();
+        }
     }
 
     @Override
     public void clear() {
+        try{
+            lock.lock();
+            set.clear();
+        } finally {
+            lock.unlock();
+        }
 
     }
 
     @Override
     public String toString() {
-        return set.toString();
+        try{
+            lock.lock();
+            return set.toString();
+        } finally {
+            lock.unlock();
+        }
     }
 }
