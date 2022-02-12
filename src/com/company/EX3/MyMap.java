@@ -13,33 +13,73 @@ public class MyMap<T, K> implements Map<T, K> {
 
     Semaphore semaphore = new Semaphore(1);
 
-    public MyMap(){
+    public MyMap() {
         map = new HashMap<>();
     }
 
     @Override
     public int size() {
-        return 0;
+        try {
+            semaphore.acquire();
+            return map.size();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            return 0;
+        } finally {
+            semaphore.release();
+        }
     }
 
     @Override
     public boolean isEmpty() {
-        return false;
+        try {
+            semaphore.acquire();
+            return map.isEmpty();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            semaphore.release();
+        }
     }
 
     @Override
     public boolean containsKey(Object key) {
-        return false;
+        try {
+            semaphore.acquire();
+            return map.containsKey(key);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            semaphore.release();
+        }
     }
 
     @Override
     public boolean containsValue(Object value) {
-        return false;
+        try {
+            semaphore.acquire();
+            return map.containsValue(value);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            semaphore.release();
+        }
     }
 
     @Override
     public K get(Object key) {
-        return null;
+        try {
+            semaphore.acquire();
+            return map.get(key);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            semaphore.release();
+        }
     }
 
     @Override
@@ -70,31 +110,77 @@ public class MyMap<T, K> implements Map<T, K> {
 
     @Override
     public void putAll(Map<? extends T, ? extends K> m) {
-
+        try {
+            semaphore.acquire();
+            map.putAll(m);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            semaphore.release();
+        }
     }
 
     @Override
     public void clear() {
-
+        try {
+            semaphore.acquire();
+            map.clear();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            semaphore.release();
+        }
     }
 
     @Override
     public Set<T> keySet() {
-        return null;
+        try {
+            semaphore.acquire();
+            return map.keySet();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            semaphore.release();
+        }
     }
 
     @Override
     public Collection<K> values() {
-        return null;
+        try {
+            semaphore.acquire();
+            return map.values();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            semaphore.release();
+        }
     }
 
     @Override
     public Set<Entry<T, K>> entrySet() {
-        return null;
+        try {
+            semaphore.acquire();
+            return map.entrySet();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            semaphore.release();
+        }
     }
 
     @Override
     public String toString() {
-        return map.toString();
+        try {
+            semaphore.acquire();
+            return map.toString();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            semaphore.release();
+        }
     }
 }

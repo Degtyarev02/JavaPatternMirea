@@ -2,6 +2,7 @@ package com.company.EX3;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.concurrent.Callable;
 
 public class TestSyncSet {
 
@@ -14,6 +15,8 @@ public class TestSyncSet {
                syncSet.add(i);
            }
         });
+
+
 
         Thread th2 = new Thread(() -> {
             for (int i = 0; i < 1000; i++) {
