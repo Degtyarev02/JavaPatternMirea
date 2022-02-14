@@ -1,20 +1,23 @@
 package com.company.EX3;
 
+import java.util.HashMap;
+import java.util.Map;
 
 public class TestSyncMap {
     public static void main(String[] args) {
 
         MyMap<Integer, Integer> syncMap = new MyMap<>();
+        /*Map<Integer, Integer> syncMap = new HashMap<>();*/
 
         Thread th1 = new Thread(() -> {
-            for(int i = 0; i < 1000; i++) {
+            for(int i = 0; i < 10; i++) {
                 syncMap.put(i, i);
             }
         });
 
         Thread th2 = new Thread(() -> {
-            for (int i = 0; i < 1000; i++) {
-                syncMap.remove(i);
+            for (int i = 10; i < 20; i++) {
+                syncMap.put(i, i);
             }
         });
 
@@ -29,5 +32,6 @@ public class TestSyncMap {
         }
 
         System.out.println(syncMap);
+        System.out.println(syncMap.size());
     }
 }

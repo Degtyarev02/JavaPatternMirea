@@ -9,9 +9,10 @@ public class TestSyncSet {
     public static void main(String[] args) {
 
         MySet<Integer> syncSet = new MySet<>();
+        /*Set<Integer> syncSet = new HashSet<>();*/
 
         Thread th1 = new Thread(() -> {
-           for(int i = 0; i < 1000; i++) {
+           for(int i = 0; i < 10; i++) {
                syncSet.add(i);
            }
         });
@@ -19,8 +20,8 @@ public class TestSyncSet {
 
 
         Thread th2 = new Thread(() -> {
-            for (int i = 0; i < 1000; i++) {
-                syncSet.remove(i);
+            for (int i = 10; i < 20; i++) {
+                syncSet.add(i);
             }
         });
 
@@ -35,5 +36,6 @@ public class TestSyncSet {
         }
 
         System.out.println(syncSet);
+        System.out.println(syncSet.size());
     }
 }
