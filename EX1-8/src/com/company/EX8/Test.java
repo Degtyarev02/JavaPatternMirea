@@ -5,6 +5,7 @@ import com.company.EX8.observer.Observer;
 import com.company.EX8.observer.WeatherData;
 import com.company.EX8.state.StateContext;
 
+
 /**
  * todo Document type Test
  */
