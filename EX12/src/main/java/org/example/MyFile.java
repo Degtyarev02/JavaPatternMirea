@@ -16,7 +16,7 @@ import java.security.Key;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
-@Component()
+@Component
 public class MyFile {
     File fileInit;
     File fileWithEncode;
@@ -27,6 +27,7 @@ public class MyFile {
     }
 
     //Метод вызывается после создания бина
+
     @PostConstruct
     public void init() {
         try {
@@ -61,8 +62,8 @@ public class MyFile {
             //Шифруем текст и записываем в файл
             byte[] bytes = cipher.doFinal(s.getBytes(StandardCharsets.UTF_8));
 
-            for (byte aByte : bytes) {
-                writer2.write(String.valueOf(aByte));
+            for (int i = 0; i < bytes.length; i++) {
+                writer2.write(String.valueOf(bytes[i]));
             }
             reader.close();
             writer2.close();
