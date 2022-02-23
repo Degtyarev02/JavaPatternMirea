@@ -1,5 +1,6 @@
 package org.example;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -15,7 +16,7 @@ import java.security.Key;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
-@Component
+@Component()
 public class MyFile {
     File fileInit;
     File fileWithEncode;
@@ -60,8 +61,8 @@ public class MyFile {
             //Шифруем текст и записываем в файл
             byte[] bytes = cipher.doFinal(s.getBytes(StandardCharsets.UTF_8));
 
-            for (int i = 0; i < bytes.length; i++) {
-                writer2.write(String.valueOf(bytes[i]));
+            for (byte aByte : bytes) {
+                writer2.write(String.valueOf(aByte));
             }
             reader.close();
             writer2.close();
