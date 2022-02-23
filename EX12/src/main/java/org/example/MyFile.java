@@ -1,5 +1,6 @@
 package org.example;
 
+import com.google.common.hash.Hashing;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
@@ -35,8 +36,8 @@ public class MyFile {
         try {
             System.out.println("INIT");
 
-            fileInit = new File("C://Users//User//Desktop//JavaPatternMirea//EX12//src//main//java//org//example//"+inputFilePath+".txt");
-            fileWithEncode = new File("C://Users//User//Desktop//JavaPatternMirea//EX12//src//main//java//org//example//"+hashFilePath+".txt");
+            fileInit = new File("C://Users//User//Desktop//JavaPatternMirea//EX12//src//main//java//org//example//" + inputFilePath + ".txt");
+            fileWithEncode = new File("C://Users//User//Desktop//JavaPatternMirea//EX12//src//main//java//org//example//" + hashFilePath + ".txt");
 
             //Записыываем в 1 файл строку
             FileWriter writer = new FileWriter(fileInit.getAbsolutePath(), false);
@@ -45,34 +46,28 @@ public class MyFile {
 
             FileWriter writer2 = new FileWriter(fileWithEncode.getAbsolutePath(), false);
             FileReader reader = new FileReader(fileInit.getAbsolutePath());
+
             int symbol;
-            String s = "";
+            StringBuilder s = new StringBuilder();
             while ((symbol = reader.read()) != -1) {
-                s += ((char) symbol);
+                s.append((char) symbol);
             }
 
-            //Исползьуем алгоритм шифрования AES
-            Cipher cipher = Cipher.getInstance("AES");
-
-            //Генерируем случайный секретный ключ размером 128 бит
+            //Генерируем уникальный ключ, чтобы хеш-код был разным, при каждом запуске
             KeyGenerator kgen = KeyGenerator.getInstance("AES");
             kgen.init(128);
             SecretKey key = kgen.generateKey();
 
-            //Инициализируем метод шифрования передавая константу на шифрование и секретный ключ
-            cipher.init(Cipher.ENCRYPT_MODE, key);
+            //Хешируем строку s по формату sha256
+            String sha256hex = Hashing.hmacSha256(key)
+                    .hashString(s.toString(), StandardCharsets.UTF_8)
+                    .toString();
 
-            //Шифруем текст и записываем в файл
-            byte[] bytes = cipher.doFinal(s.getBytes(StandardCharsets.UTF_8));
+            writer2.write(sha256hex);
 
-            for (int i = 0; i < bytes.length; i++) {
-                writer2.write(String.valueOf(bytes[i]));
-            }
             reader.close();
             writer2.close();
-        } catch (IOException | NoSuchAlgorithmException
-                | NoSuchPaddingException | InvalidKeyException
-                | BadPaddingException | IllegalBlockSizeException e) {
+        } catch (IOException | NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
     }
