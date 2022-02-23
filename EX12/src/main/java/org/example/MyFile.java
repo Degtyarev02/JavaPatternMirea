@@ -22,10 +22,10 @@ public class MyFile {
     File fileInit;
     File fileWithEncode;
 
-    @Value("#{springApplicationArguments.nonOptionArgs[0]}")
+    @Value("#{springApplicationArguments.sourceArgs[0]}")
     private String inputFilePath;
 
-    @Value("#{springApplicationArguments.nonOptionArgs[1]}")
+    @Value("#{springApplicationArguments.sourceArgs[1]}")
     private String hashFilePath;
 
     //Метод вызывается после создания бина
