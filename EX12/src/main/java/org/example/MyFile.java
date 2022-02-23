@@ -1,5 +1,6 @@
 package org.example;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
@@ -21,17 +22,21 @@ public class MyFile {
     File fileInit;
     File fileWithEncode;
 
-    public MyFile() {
-        fileInit = new File("C://Users//User//Desktop//JavaPatternMirea//EX12//src//main//java//org//example//file1.txt");
-        fileWithEncode = new File("C://Users//User//Desktop//JavaPatternMirea//EX12//src//main//java//org//example//file2.txt");
-    }
+    @Value("#{springApplicationArguments.nonOptionArgs[0]}")
+    private String inputFilePath;
+
+    @Value("#{springApplicationArguments.nonOptionArgs[1]}")
+    private String hashFilePath;
 
     //Метод вызывается после создания бина
-
     @PostConstruct
     public void init() {
+
         try {
             System.out.println("INIT");
+
+            fileInit = new File("C://Users//User//Desktop//JavaPatternMirea//EX12//src//main//java//org//example//"+inputFilePath+".txt");
+            fileWithEncode = new File("C://Users//User//Desktop//JavaPatternMirea//EX12//src//main//java//org//example//"+hashFilePath+".txt");
 
             //Записыываем в 1 файл строку
             FileWriter writer = new FileWriter(fileInit.getAbsolutePath(), false);
@@ -45,8 +50,6 @@ public class MyFile {
             while ((symbol = reader.read()) != -1) {
                 s += ((char) symbol);
             }
-
-            System.out.println(s);
 
             //Исползьуем алгоритм шифрования AES
             Cipher cipher = Cipher.getInstance("AES");
