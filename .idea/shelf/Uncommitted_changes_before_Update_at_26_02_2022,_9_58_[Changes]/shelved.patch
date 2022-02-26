@@ -1,0 +1,73 @@
+Index: src/com/company/EX3/TestSyncMap.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company.EX3;\n\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class TestSyncMap {\n    public static void main(String[] args) {\n\n        MyMap<Integer, Integer> syncMap = new MyMap<>();\n        /*Map<Integer, Integer> syncMap = new HashMap<>();*/\n\n        Thread th1 = new Thread(() -> {\n            for(int i = 0; i < 10; i++) {\n                syncMap.put(i, i);\n            }\n        });\n\n        Thread th2 = new Thread(() -> {\n            for (int i = 10; i < 20; i++) {\n                syncMap.put(i, i);\n            }\n        });\n\n        th1.start();\n        th2.start();\n\n        try{\n            th1.join();\n            th2.join();\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n\n        System.out.println(syncMap);\n        System.out.println(syncMap.size());\n    }\n}\n
+===================================================================
+diff --git a/src/com/company/EX3/TestSyncMap.java b/src/com/company/EX3/TestSyncMap.java
+--- a/src/com/company/EX3/TestSyncMap.java	
++++ b/src/com/company/EX3/TestSyncMap.java	
+@@ -6,8 +6,8 @@
+ public class TestSyncMap {
+     public static void main(String[] args) {
+ 
+-        MyMap<Integer, Integer> syncMap = new MyMap<>();
+-        /*Map<Integer, Integer> syncMap = new HashMap<>();*/
++       /* MyMap<Integer, Integer> syncMap = new MyMap<>();*/
++        Map<Integer, Integer> syncMap = new HashMap<>();
+ 
+         Thread th1 = new Thread(() -> {
+             for(int i = 0; i < 10; i++) {
+Index: src/com/company/EX3/TestSyncSet.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company.EX3;\n\nimport java.util.HashSet;\nimport java.util.Set;\nimport java.util.concurrent.Callable;\n\npublic class TestSyncSet {\n\n    public static void main(String[] args) {\n\n        MySet<Integer> syncSet = new MySet<>();\n        /*Set<Integer> syncSet = new HashSet<>();*/\n\n        Thread th1 = new Thread(() -> {\n           for(int i = 0; i < 10; i++) {\n               syncSet.add(i);\n           }\n        });\n\n\n\n        Thread th2 = new Thread(() -> {\n            for (int i = 10; i < 20; i++) {\n                syncSet.add(i);\n            }\n        });\n\n        th1.start();\n        th2.start();\n\n        try{\n            th1.join();\n            th2.join();\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n\n        System.out.println(syncSet);\n        System.out.println(syncSet.size());\n    }\n}\n
+===================================================================
+diff --git a/src/com/company/EX3/TestSyncSet.java b/src/com/company/EX3/TestSyncSet.java
+--- a/src/com/company/EX3/TestSyncSet.java	
++++ b/src/com/company/EX3/TestSyncSet.java	
+@@ -12,15 +12,14 @@
+         /*Set<Integer> syncSet = new HashSet<>();*/
+ 
+         Thread th1 = new Thread(() -> {
+-           for(int i = 0; i < 10; i++) {
+-               syncSet.add(i);
+-           }
++            for (int i = 0; i < 10000; i++) {
++                syncSet.add(i);
++            }
+         });
+ 
+ 
+-
+         Thread th2 = new Thread(() -> {
+-            for (int i = 10; i < 20; i++) {
++            for (int i = 10000; i < 20000; i++) {
+                 syncSet.add(i);
+             }
+         });
+@@ -28,7 +27,7 @@
+         th1.start();
+         th2.start();
+ 
+-        try{
++        try {
+             th1.join();
+             th2.join();
+         } catch (InterruptedException e) {
+Index: src/com/company/EX4/Test.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company.EX4;\n\n/**\n * todo Document type Test\n */\npublic class Test {\n    public static void main(String[] args) {\n        MyExecutor myExecutor = new MyExecutor(2);\n\n        Thread th1 = new Thread(() -> {\n            System.out.println(\"Thread start \" + Thread.currentThread().getName() );\n            try {\n                Thread.sleep(2000);\n            } catch (InterruptedException e) {\n                e.printStackTrace();\n            }\n            System.out.println(\"Thread finished \" + Thread.currentThread().getName() );\n        });\n\n\n\n        for (int i = 0; i < 10; i++) {\n            myExecutor.submit(th1);\n        }\n\n        myExecutor.shutdown();\n    }\n}\n
+===================================================================
+diff --git a/src/com/company/EX4/Test.java b/src/com/company/EX4/Test.java
+--- a/src/com/company/EX4/Test.java	
++++ b/src/com/company/EX4/Test.java	
+@@ -5,7 +5,7 @@
+  */
+ public class Test {
+     public static void main(String[] args) {
+-        MyExecutor myExecutor = new MyExecutor(2);
++        MyExecutor myExecutor = new MyExecutor(5);
+ 
+         Thread th1 = new Thread(() -> {
+             System.out.println("Thread start " + Thread.currentThread().getName() );
