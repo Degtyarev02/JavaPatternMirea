@@ -36,8 +36,10 @@ public class MyFile {
         try {
             System.out.println("INIT");
 
-            fileInit = new File("C://Users//User//Desktop//JavaPatternMirea//EX12//src//main//java//org//example//" + inputFilePath + ".txt");
-            fileWithEncode = new File("C://Users//User//Desktop//JavaPatternMirea//EX12//src//main//java//org//example//" + hashFilePath + ".txt");
+
+            // Путь до UNIX директории /home/vladimir/JavaPatternMirea/EX12/src/main/java/org/example
+            fileInit = new File("/home/vladimir/JavaPatternMirea/EX12/src/main/java/org/example/" + inputFilePath + ".txt");
+            fileWithEncode = new File("/home/vladimir/JavaPatternMirea/EX12/src/main/java/org/example/" + hashFilePath + ".txt");
 
             //Записыываем в 1 файл строку
             FileWriter writer = new FileWriter(fileInit.getAbsolutePath(), false);

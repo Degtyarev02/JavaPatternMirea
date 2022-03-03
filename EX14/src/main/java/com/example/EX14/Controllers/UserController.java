@@ -14,7 +14,7 @@ import java.util.List;
 @Controller
 public class UserController {
 
-    private List<User> users = new ArrayList<>();
+    private final List<User> users = new ArrayList<>();
     private static int ID = 0;
 
     @GetMapping("/users")

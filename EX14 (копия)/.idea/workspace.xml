@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="87c55036-5360-464e-a427-e635b5c476a7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../EX1-8/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX1/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX1/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX1/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX1/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX2/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX2/Human.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX2/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX2/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX3/MyMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX3/MyMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX3/MySet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX3/MySet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX3/TestSyncMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX3/TestSyncMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX3/TestSyncSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX3/TestSyncSet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX4/MyExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX4/MyExecutor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX4/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX4/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX5/Singleton1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX5/Singleton1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX5/Singleton2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX5/Singleton2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX5/Singleton3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX5/Singleton3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX5/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX5/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/CarFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/CarFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/CivilCarFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/CivilCarFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/SUV.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/SUV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/Sedan.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/Sedan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/SportCarFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/SportCarFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/SportSUV.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/SportSUV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/SportSedan.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/abstract_factory/SportSedan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/builder/Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/builder/Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/builder/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/builder/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/builder/CarBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/builder/CarBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/builder/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/builder/Director.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/factory/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/factory/Enemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/factory/Factory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/factory/Factory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/factory/Warrior.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/factory/Warrior.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/factory/WarriorFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/factory/WarriorFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/factory/Wizard.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/factory/Wizard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/factory/WizardFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/factory/WizardFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/prototype/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/prototype/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/prototype/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/prototype/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/prototype/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX6/prototype/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/facade/AirFlowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/facade/AirFlowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/facade/CarEngineFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/facade/CarEngineFacade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/facade/CoolingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/facade/CoolingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/facade/FuelInjector.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/facade/FuelInjector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/facade/Starter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/facade/Starter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/lightweight/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/lightweight/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/lightweight/PersonType.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/lightweight/PersonType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/lightweight/PersonsFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX7/lightweight/PersonsFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/observer/CurrentConditionsDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/observer/CurrentConditionsDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/observer/Observable.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/observer/Observable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/observer/Observer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/observer/Observer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/observer/WeatherData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/observer/WeatherData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/state/GaseousState.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/state/GaseousState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/state/LiquidState.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/state/LiquidState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/state/SolidState.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/state/SolidState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/state/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/state/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/state/StateContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/EX8/state/StateContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX1-8/out/production/JavaPatternMirea/com/company/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX12/src/main/java/org/example/MyFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EX12/src/main/java/org/example/MyFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX12/src/main/java/org/example/file2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX12/target/classes/org/example/MyFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX12/target/classes/org/example/MyFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX13/target/classes/org/example/Entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EX13/target/classes/org/example/Entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX14/src/main/java/com/example/EX14/Controllers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EX14/src/main/java/com/example/EX14/Controllers/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX14/src/main/java/com/example/EX14/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EX14/src/main/java/com/example/EX14/Controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX14/src/main/resources/templates/home.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../EX14/src/main/resources/templates/home.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EX9/.idea/modules.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="25mj69j1Vs4r9aWtMxhOOQA26fB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EX15" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.Ex14Application">
+    <configuration name="Ex14Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="EX15" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.EX14.Ex14Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex14Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="EX14" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.EX14.Ex14Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87c55036-5360-464e-a427-e635b5c476a7" name="Changes" comment="" />
+      <created>1646138982604</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646138982604</updated>
+      <workItem from="1646138982604" duration="2363000" />
+      <workItem from="1646315829213" duration="710000" />
+      <workItem from="1646316748498" duration="297000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

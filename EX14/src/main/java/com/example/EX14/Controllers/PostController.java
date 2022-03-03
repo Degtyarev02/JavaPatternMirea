@@ -15,7 +15,7 @@ import java.util.List;
 @Controller
 public class PostController {
 
-    private List<Post> postList = new ArrayList<>();
+    private final List<Post> postList = new ArrayList<>();
     private static int ID = 0;
     SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMMM");
 
