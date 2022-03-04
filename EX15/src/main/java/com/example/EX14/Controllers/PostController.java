@@ -1,7 +1,9 @@
 package com.example.EX14.Controllers;
 
 import com.example.EX14.Entity.Post;
+import com.example.EX14.Entity.User;
 import com.example.EX14.Repos.PostRepo;
+import com.example.EX14.Repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,7 +12,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -18,7 +19,10 @@ import java.util.List;
 public class PostController {
 
     @Autowired
-    PostRepo repo;
+    PostRepo postRepo;
+
+    @Autowired
+    UserRepo userRepo;
 
     SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMMM");
 
@@ -28,27 +32,29 @@ public class PostController {
     }
 
     @GetMapping("/posts")
-    public String posts(Model model) {
-        List<Post> postList = repo.findAll();
+    public String addPosts(Model model) {
+        List<Post> postList = postRepo.findAll();
         model.addAttribute("posts", postList);
         return "posts";
     }
 
     @PostMapping("/posts")
-    public String posts(String text, Model model) {
+    public String addPosts(String text, Model model, User user) {
         Post post = new Post();
         post.setText(text);
+        post.setAuthor(user);
         post.setCreationDate(dateFormat.format(new Date()));
-        repo.save(post);
-        List<Post> postList = repo.findAll();
+        postRepo.save(post);
+        List<Post> postList = postRepo.findAll();
         model.addAttribute("posts", postList);
-        return "redirect:/posts";
+        return "posts";
     }
 
     @PostMapping("/posts/{id}")
-    public String posts(Model model, @PathVariable Long id) {
-        repo.deleteById(id);
-        List<Post> postList = repo.findAll();
+    public String deletePost(Model model, @PathVariable Post id) {
+        id.setAuthor(null);
+        postRepo.delete(id);
+        List<Post> postList = postRepo.findAll();
         model.addAttribute("posts", postList);
         return "redirect:/posts";
     }

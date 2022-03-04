@@ -2,6 +2,8 @@ package com.example.EX14.Entity;
 
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "usr")
@@ -13,6 +15,13 @@ public class User {
     private String lastName;
     private String middleName;
     private String birthDate;
+
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            mappedBy = "author",
+            fetch = FetchType.LAZY
+    )
+    private List<Post> posts = new ArrayList<>();
 
     public User() {
     }
@@ -55,5 +64,13 @@ public class User {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public List<Post> getPosts() {
+        return posts;
+    }
+
+    public void setPosts(List<Post> posts) {
+        this.posts = posts;
     }
 }
