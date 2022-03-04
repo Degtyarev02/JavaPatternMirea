@@ -1,9 +1,7 @@
 package com.example.EX14.Controllers;
 
 import com.example.EX14.Entity.Post;
-import com.example.EX14.Entity.User;
-import com.example.EX14.Repos.PostRepo;
-import com.example.EX14.Repos.UserRepo;
+import com.example.EX14.Service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,11 +16,9 @@ import java.util.List;
 @Controller
 public class PostController {
 
-    @Autowired
-    PostRepo postRepo;
 
     @Autowired
-    UserRepo userRepo;
+    Service service;
 
     SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMMM");
 
@@ -33,28 +29,27 @@ public class PostController {
 
     @GetMapping("/posts")
     public String addPosts(Model model) {
-        List<Post> postList = postRepo.findAll();
+        List<Post> postList = service.getPosts();
         model.addAttribute("posts", postList);
         return "posts";
     }
 
     @PostMapping("/posts")
-    public String addPosts(String text, Model model, User user) {
+    public String addPosts(String text, Model model, String user) {
         Post post = new Post();
         post.setText(text);
-        post.setAuthor(user);
+        post.setAuthor(service.findUser(user));
         post.setCreationDate(dateFormat.format(new Date()));
-        postRepo.save(post);
-        List<Post> postList = postRepo.findAll();
+        service.savePost(post);
+        List<Post> postList = service.getPosts();
         model.addAttribute("posts", postList);
         return "posts";
     }
 
     @PostMapping("/posts/{id}")
-    public String deletePost(Model model, @PathVariable Post id) {
-        id.setAuthor(null);
-        postRepo.delete(id);
-        List<Post> postList = postRepo.findAll();
+    public String deletePost(Model model, @PathVariable String id) {
+        service.deletePost(service.findPost(id));
+        List<Post> postList = service.getPosts();
         model.addAttribute("posts", postList);
         return "redirect:/posts";
     }

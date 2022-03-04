@@ -1,7 +1,7 @@
 package com.example.EX14.Controllers;
 
 import com.example.EX14.Entity.User;
-import com.example.EX14.Repos.UserRepo;
+import com.example.EX14.Service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,11 +16,11 @@ public class UserController {
 
 
     @Autowired
-    UserRepo repo;
+    Service service;
 
     @GetMapping("/users")
     public String users(Model model) {
-        List<User> users = repo.findAll();
+        List<User> users = service.getUsers();
         model.addAttribute("users", users);
         return "users";
     }
@@ -37,16 +37,17 @@ public class UserController {
         user.setMiddleName(middleName);
         user.setLastName(lastName);
         user.setBirthDate(birthDate);
-        repo.save(user);
-        List<User> users = repo.findAll();
+        service.saveUser(user);
+        List<User> users = service.getUsers();
         model.addAttribute("users", users);
         return "redirect:/users";
     }
 
     @PostMapping("/users/{id}")
-    public String deleteUsers(Model model, @PathVariable Long id) {
-        repo.deleteById(id);
-        List<User> users = repo.findAll();
+    public String deleteUsers(Model model, @PathVariable String id) {
+        User user = service.findUser(id);
+        service.deleteUser(user);
+        List<User> users = service.getUsers();
         model.addAttribute("users", users);
         return "redirect:/users";
     }
