@@ -1,7 +1,7 @@
-package com.example.EX14.Service;
+package com.example.EX15.Service;
 
-import com.example.EX14.Entity.Post;
-import com.example.EX14.Entity.User;
+import com.example.EX15.Entity.Post;
+import com.example.EX15.Entity.User;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

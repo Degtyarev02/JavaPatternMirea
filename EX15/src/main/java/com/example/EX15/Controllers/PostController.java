@@ -1,7 +1,7 @@
-package com.example.EX14.Controllers;
+package com.example.EX15.Controllers;
 
-import com.example.EX14.Entity.Post;
-import com.example.EX14.Service.Service;
+import com.example.EX15.Entity.Post;
+import com.example.EX15.Service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

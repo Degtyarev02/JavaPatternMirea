@@ -1,4 +1,4 @@
-package com.example.EX14;
+package com.example.EX15;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
