@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -50,5 +51,15 @@ public class UserController {
         List<User> users = service.getUsers();
         model.addAttribute("users", users);
         return "redirect:/users";
+    }
+
+    @GetMapping("/users/filter")
+    public String userFilter(Model model,
+                             @RequestParam(defaultValue = "") String field,
+                             @RequestParam(defaultValue = "") String value) {
+        List<User> users = (field.equals("") || value.equals("")) ? service.getUsers() :
+                service.userFilter(field, value);
+        model.addAttribute("users", users);
+        return "filter";
     }
 }
