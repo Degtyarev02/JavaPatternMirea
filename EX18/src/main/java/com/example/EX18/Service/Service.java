@@ -5,6 +5,7 @@ import com.example.EX18.Entity.User;
 import com.example.EX18.Repos.PostRepo;
 import com.example.EX18.Repos.UserRepo;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ import javax.persistence.criteria.Root;
 import java.util.List;
 
 @Component
+@Slf4j
 @RequiredArgsConstructor
 public class Service {
 
@@ -35,33 +37,43 @@ public class Service {
     void init() {
         session = sessionFactory.openSession();
     }
+
     public List<User> getUsers() {
+        log.info("Find all users");
         return userRepo.findAll();
     }
 
     /**
      * Метод, который сохраняет пользователя
+     *
      * @param user пользователь, которого необходимо сохранить
      */
-    public void saveUser(User user){
-        userRepo.save(user);
+    public void saveUser(User user) {
+        if (user == null) {
+            log.error("User to saved is null");
+        } else {
+            log.info("User saved: " + user);
+            userRepo.save(user);
+        }
     }
 
     /**
      * Метод, который удаляет пользователя
+     *
      * @param user пользователь, которого необходимо удалить
      */
-    public void deleteUser(User user){
+    public void deleteUser(User user) {
         //Удалим все посты пользователя
         postRepo.deleteAll(user.getPosts());
         userRepo.delete(user);
+        log.info("User" + user + "delete");
     }
 
-    public User findUser(String id){
+    public User findUser(String id) {
         return session.createQuery("select u from User u where u.id=" + id, User.class).getSingleResult();
     }
 
-    public List<User> userFilter(String field, String value){
+    public List<User> userFilter(String field, String value) {
         CriteriaBuilder criteria = session.getCriteriaBuilder();
         CriteriaQuery<User> userCriteriaQuery = criteria.createQuery(User.class);
         Root<User> userRoot = userCriteriaQuery.from(User.class);
@@ -71,22 +83,31 @@ public class Service {
     }
 
 
-
-
     public List<Post> getPosts() {
+        log.info("Find all posts");
         return postRepo.findAll();
     }
 
-    public void savePost(Post post){
-       postRepo.save(post);
+    public void savePost(Post post) {
+        if (post == null) {
+            log.error("Post to save is null");
+        } else {
+            postRepo.save(post);
+            log.info("Post " + post + " is delete");
+        }
     }
 
-    public void deletePost(Post post){
-        post.setAuthor(null);
-        postRepo.delete(post);
+    public void deletePost(Post post) {
+        if (post == null) {
+            log.error("Post for delete is null");
+        } else {
+            post.setAuthor(null);
+            postRepo.delete(post);
+            log.info("Post " + post + " is delete");
+        }
     }
 
-    public Post findPost(String id){
+    public Post findPost(String id) {
         return session.createQuery("select p from Post p where p.id=" + id, Post.class).getSingleResult();
     }
 }
