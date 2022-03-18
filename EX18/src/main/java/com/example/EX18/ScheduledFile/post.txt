@@ -1,0 +1,3 @@
+Post{id=19, text='Привет, админ', creationDate='17 марта', author=User{id=14, firstName='Владимир', lastName='Дегтярев', middleName='Сергеевич', birthDate='01.08.2002'}}
+Post{id=20, text='Привет, админ', creationDate='17 марта', author=User{id=11, firstName='Ivan', lastName='Ivanov', middleName='Ivanovich', birthDate='01.08.2002'}}
+Post{id=21, text='Привет, админ', creationDate='17 марта', author=User{id=11, firstName='Ivan', lastName='Ivanov', middleName='Ivanovich', birthDate='01.08.2002'}}

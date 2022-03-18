@@ -1,0 +1,2 @@
+User{id=11, firstName='Ivan', lastName='Ivanov', middleName='Ivanovich', birthDate='01.08.2002'}
+User{id=14, firstName='Владимир', lastName='Дегтярев', middleName='Сергеевич', birthDate='01.08.2002'}

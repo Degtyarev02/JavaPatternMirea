@@ -16,16 +16,21 @@ import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Component
 @Slf4j
 @RequiredArgsConstructor
+@Transactional
 public class Service {
 
 
     @Autowired
     UserRepo userRepo;
+
+    @Autowired
+    MailSenderService serviceSender;
 
     @Autowired
     PostRepo postRepo;
@@ -92,6 +97,7 @@ public class Service {
         if (post == null) {
             log.error("Post to save is null");
         } else {
+            serviceSender.send("Пост создан " + post.getText());
             postRepo.save(post);
             log.info("Post " + post + " is delete");
         }
@@ -103,6 +109,7 @@ public class Service {
         } else {
             post.setAuthor(null);
             postRepo.delete(post);
+            serviceSender.send("Пост " + post.getText() + " удален");
             log.info("Post " + post + " is delete");
         }
     }

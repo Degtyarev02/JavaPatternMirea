@@ -82,7 +82,6 @@ public class User {
                 ", lastName='" + lastName + '\'' +
                 ", middleName='" + middleName + '\'' +
                 ", birthDate='" + birthDate + '\'' +
-                ", posts=" + posts +
                 '}';
     }
 }
