@@ -26,24 +26,6 @@ public class UserController {
         return "users";
     }
 
-    @PostMapping("/users")
-    public String addUser(Model model,
-                          String firstName,
-                          String middleName,
-                          String lastName,
-                          String birthDate
-    ) {
-        User user = new User();
-        user.setFirstName(firstName);
-        user.setMiddleName(middleName);
-        user.setLastName(lastName);
-        user.setBirthDate(birthDate);
-        service.saveUser(user);
-        List<User> users = service.getUsers();
-        model.addAttribute("users", users);
-        return "redirect:/users";
-    }
-
     @PostMapping("/users/{id}")
     public String deleteUsers(Model model, @PathVariable String id) {
         User user = service.findUser(id);

@@ -8,38 +8,10 @@
     <title>Users</title>
 </head>
 <body>
-
-<form method="post">
-    <label>
-        Фамилия:
-        <input type="text" name="lastName">
-    </label>
-    <br>
-    <br>
-    <label>
-        Имя:
-        <input type="text" name="firstName">
-    </label>
-    <br>
-    <br>
-    <label>
-        Отчество:
-        <input type="text" name="middleName">
-    </label>
-    <br>
-    <br>
-    <label>
-        Дата рождения:
-        <input type="text" name="birthDate">
-    </label>
-    <button type="submit">Сохранить</button>
-</form>
-<br>
-<br>
-<br>
 <#list users as user>
     <div>
-        <span>${user.firstName} ${user.middleName} ${user.lastName} ${user.birthDate}</span>
+        <span>${user.username}</span>
+        <br>
         <form action="/users/${user.id}" method="post">
             <button type="submit">Удалить</button>
         </form>

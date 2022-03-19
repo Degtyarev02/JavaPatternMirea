@@ -70,6 +70,7 @@ public class Service {
     public void deleteUser(User user) {
         //Удалим все посты пользователя
         postRepo.deleteAll(user.getPosts());
+        user.getRoles().clear();
         userRepo.delete(user);
         log.info("User" + user + "delete");
     }

@@ -4,6 +4,7 @@ import com.example.EX18.Entity.Post;
 import com.example.EX18.Entity.User;
 import com.example.EX18.Service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,7 +37,7 @@ public class PostController {
     }
 
     @PostMapping("/posts")
-    public String addPosts(String text, Model model, User user) {
+    public String addPosts(String text, Model model, @AuthenticationPrincipal User user) {
         Post post = new Post();
         post.setText(text);
         post.setAuthor(user);

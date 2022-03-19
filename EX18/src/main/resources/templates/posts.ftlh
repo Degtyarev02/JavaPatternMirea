@@ -10,14 +10,13 @@
 <body>
 <form method="post">
     <input type="text" name="text">
-    <input type="text" name="user">
     <button type="submit">Сохранить</button>
 </form>
 <div>
     <#list posts as post>
         <div><span>${post.id}: ${post.creationDate} - ${post.text}</span>
             <br>
-            <span>${post.getAuthor().firstName} ${post.getAuthor().lastName}</span>
+            <span>${post.getAuthor().username}</span>
             <form action="/posts/${post.id}" method="post">
                 <button type="submit">Удалить</button>
             </form>
