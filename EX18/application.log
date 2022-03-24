@@ -7308,3 +7308,629 @@ Caused by: org.postgresql.util.PSQLException: ОШИБКА: отношение "
                 – Find all posts
 41190 [http-nio-8080-exec-9] INFO  com.example.EX18.Aspect.MainAOP
                 – Execution time:1
+712416 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+712420 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+712424 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+229  [main] INFO  com.example.EX18.Service.Service
+                – Find all users
+378  [main] INFO  com.example.EX18.Service.Service
+                – Find all users
+446  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.EX18.Service.ServiceTest], using SpringBootContextLoader
+455  [main] INFO  o.s.t.c.s.AbstractContextLoader
+                – Could not detect default resource locations for test class [com.example.EX18.Service.ServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+456  [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                – Could not detect default configuration classes for test class [com.example.EX18.Service.ServiceTest]: ServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+681  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Found @SpringBootConfiguration com.example.EX18.Ex18Application for test class com.example.EX18.Service.ServiceTest
+865  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+895  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5b6813df, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5f2606b, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2b58f754, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3ebff828, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2552f2cb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@33352f32, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5f3b9c57, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1e044120, org.springframework.test.context.event.EventPublishingTestExecutionListener@2cf23c81, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3624da92, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@35fe2125, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@94f6bfb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@34645867, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2484f433, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@60b71e8f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1255b1d1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@464649c]
+1320 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.2.Final
+1320 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Starting ServiceTest using Java 17.0.3 on vladimir-bohkwax9x with PID 15905 (started by vladimir in /home/vladimir/Downloads/JavaPatternMirea/EX18)
+1322 [main] INFO  c.example.EX18.Service.ServiceTest
+                – No active profile set, falling back to 1 default profile: "default"
+2488 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2583 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+4316 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4453 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4654 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+4731 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.5.Final
+4782 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4954 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5756 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5773 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6429 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6832 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will not secure any request
+8301 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor
+                – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+8313 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Started ServiceTest in 7.359 seconds (JVM running for 9.293)
+8421 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: saveUser
+8437 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:11
+8507 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+8509 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+8517 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+422  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.EX18.Service.ServiceTest], using SpringBootContextLoader
+434  [main] INFO  o.s.t.c.s.AbstractContextLoader
+                – Could not detect default resource locations for test class [com.example.EX18.Service.ServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+437  [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                – Could not detect default configuration classes for test class [com.example.EX18.Service.ServiceTest]: ServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+667  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Found @SpringBootConfiguration com.example.EX18.Ex18Application for test class com.example.EX18.Service.ServiceTest
+852  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+873  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@51e4ccb3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@46e8a539, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@495083a0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5fd62371, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@28a0fd6c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2b62442c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@66629f63, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@841e575, org.springframework.test.context.event.EventPublishingTestExecutionListener@27a5328c, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@1e5f4170, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@6c345c5f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6b5966e1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@65e61854, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1568159, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4fcee388, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6f80fafe, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3af17be2]
+1331 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Starting ServiceTest using Java 17.0.3 on vladimir-bohkwax9x with PID 16085 (started by vladimir in /home/vladimir/Downloads/JavaPatternMirea/EX18)
+1333 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.2.Final
+1333 [main] INFO  c.example.EX18.Service.ServiceTest
+                – No active profile set, falling back to 1 default profile: "default"
+2434 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2530 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+4226 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4350 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4546 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+4618 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.5.Final
+4673 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4861 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5645 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5660 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6284 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6677 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will not secure any request
+8098 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor
+                – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+8111 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Started ServiceTest in 7.186 seconds (JVM running for 9.106)
+8226 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: saveUser
+8271 [main] INFO  com.example.EX18.Service.Service
+                – User saved: User{id=null, firstName='null', lastName='null', middleName='null', birthDate='null', username='Test', password='null', active=true, password2='null', roles=[USER]}
+8276 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:46
+8369 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+8372 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+8380 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+423  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.EX18.Service.ServiceTest], using SpringBootContextLoader
+434  [main] INFO  o.s.t.c.s.AbstractContextLoader
+                – Could not detect default resource locations for test class [com.example.EX18.Service.ServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+435  [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                – Could not detect default configuration classes for test class [com.example.EX18.Service.ServiceTest]: ServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+651  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Found @SpringBootConfiguration com.example.EX18.Ex18Application for test class com.example.EX18.Service.ServiceTest
+881  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+909  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@841e575, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@27a5328c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1e5f4170, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6c345c5f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6b5966e1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@65e61854, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1568159, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4fcee388, org.springframework.test.context.event.EventPublishingTestExecutionListener@6f80fafe, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3af17be2, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@f9879ac, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@37f21974, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5f4d427e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6e521c1e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@224b4d61, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5d5d9e5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@303e3593]
+1411 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Starting ServiceTest using Java 17.0.3 on vladimir-bohkwax9x with PID 16186 (started by vladimir in /home/vladimir/Downloads/JavaPatternMirea/EX18)
+1413 [main] INFO  c.example.EX18.Service.ServiceTest
+                – No active profile set, falling back to 1 default profile: "default"
+1420 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.2.Final
+2583 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2697 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 87 ms. Found 2 JPA repository interfaces.
+4443 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4568 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4747 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+4822 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.5.Final
+4873 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+5044 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5945 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5962 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6621 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+7026 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will not secure any request
+8464 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor
+                – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+8477 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Started ServiceTest in 7.512 seconds (JVM running for 9.441)
+8586 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: saveUser
+8649 [main] INFO  com.example.EX18.Service.Service
+                – User saved: User{id=null, firstName='null', lastName='null', middleName='null', birthDate='null', username='Test', password='null', active=true, password2='null', roles=[USER]}
+8653 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:64
+8734 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+8737 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+8744 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+406  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.EX18.Service.ServiceTest], using SpringBootContextLoader
+419  [main] INFO  o.s.t.c.s.AbstractContextLoader
+                – Could not detect default resource locations for test class [com.example.EX18.Service.ServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+420  [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                – Could not detect default configuration classes for test class [com.example.EX18.Service.ServiceTest]: ServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+620  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Found @SpringBootConfiguration com.example.EX18.Ex18Application for test class com.example.EX18.Service.ServiceTest
+811  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+843  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4ef27d66, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@362a019c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1d9bec4d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5c48c0c0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@10c8f62, org.springframework.test.context.support.DirtiesContextTestExecutionListener@674c583e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@25f7391e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3f23a3a0, org.springframework.test.context.event.EventPublishingTestExecutionListener@5ab14cb9, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@5fb97279, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@439a8f59, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@61861a29, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@31024624, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@25bcd0c7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@32cb636e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@63cd604c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@40dd3977]
+1227 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Starting ServiceTest using Java 17.0.3 on vladimir-bohkwax9x with PID 16607 (started by vladimir in /home/vladimir/Downloads/JavaPatternMirea/EX18)
+1229 [main] INFO  c.example.EX18.Service.ServiceTest
+                – No active profile set, falling back to 1 default profile: "default"
+1240 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.2.Final
+2259 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2348 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+4263 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4383 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4552 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+4610 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.5.Final
+4656 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4827 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5674 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5691 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6283 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6648 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will not secure any request
+8025 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor
+                – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+8038 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Started ServiceTest in 7.143 seconds (JVM running for 8.939)
+8134 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: getUsers
+8154 [main] INFO  com.example.EX18.Service.Service
+                – Find all users
+8159 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:20
+8203 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+8205 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+8212 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+406  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.EX18.Service.ServiceTest], using SpringBootContextLoader
+417  [main] INFO  o.s.t.c.s.AbstractContextLoader
+                – Could not detect default resource locations for test class [com.example.EX18.Service.ServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+419  [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                – Could not detect default configuration classes for test class [com.example.EX18.Service.ServiceTest]: ServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+627  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Found @SpringBootConfiguration com.example.EX18.Ex18Application for test class com.example.EX18.Service.ServiceTest
+821  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+853  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4ef27d66, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@362a019c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1d9bec4d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5c48c0c0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@10c8f62, org.springframework.test.context.support.DirtiesContextTestExecutionListener@674c583e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@25f7391e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3f23a3a0, org.springframework.test.context.event.EventPublishingTestExecutionListener@5ab14cb9, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@5fb97279, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@439a8f59, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@61861a29, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@31024624, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@25bcd0c7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@32cb636e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@63cd604c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@40dd3977]
+1309 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Starting ServiceTest using Java 17.0.3 on vladimir-bohkwax9x with PID 16811 (started by vladimir in /home/vladimir/Downloads/JavaPatternMirea/EX18)
+1311 [main] INFO  c.example.EX18.Service.ServiceTest
+                – No active profile set, falling back to 1 default profile: "default"
+1318 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.2.Final
+2440 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2556 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+4327 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4457 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4659 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+4737 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.5.Final
+4790 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4954 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5801 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5814 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6453 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6872 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will not secure any request
+8288 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor
+                – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+8300 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Started ServiceTest in 7.372 seconds (JVM running for 9.259)
+8377 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: saveUser
+8427 [main] INFO  com.example.EX18.Service.Service
+                – User saved: User{id=null, firstName='null', lastName='null', middleName='null', birthDate='null', username='Vasya', password='null', active=true, password2='null', roles=[USER]}
+8432 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:49
+8434 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: saveUser
+8435 [main] INFO  com.example.EX18.Service.Service
+                – User saved: User{id=null, firstName='null', lastName='null', middleName='null', birthDate='null', username='Dima', password='null', active=true, password2='null', roles=[USER]}
+8436 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:1
+8436 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: getUsers
+8437 [main] INFO  com.example.EX18.Service.Service
+                – Find all users
+8437 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:0
+8483 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+8487 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+8498 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+409  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.EX18.Service.ServiceTest], using SpringBootContextLoader
+420  [main] INFO  o.s.t.c.s.AbstractContextLoader
+                – Could not detect default resource locations for test class [com.example.EX18.Service.ServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+421  [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                – Could not detect default configuration classes for test class [com.example.EX18.Service.ServiceTest]: ServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+618  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Found @SpringBootConfiguration com.example.EX18.Ex18Application for test class com.example.EX18.Service.ServiceTest
+784  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+807  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5f3b9c57, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e044120, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2cf23c81, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3624da92, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@35fe2125, org.springframework.test.context.support.DirtiesContextTestExecutionListener@94f6bfb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@34645867, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2484f433, org.springframework.test.context.event.EventPublishingTestExecutionListener@60b71e8f, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@1255b1d1, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@464649c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7c22d4f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5f59185e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@60bdf15d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@47da3952, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@51e4ccb3, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@46e8a539]
+1260 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Starting ServiceTest using Java 17.0.3 on vladimir-bohkwax9x with PID 17466 (started by vladimir in /home/vladimir/Downloads/JavaPatternMirea/EX18)
+1262 [main] INFO  c.example.EX18.Service.ServiceTest
+                – No active profile set, falling back to 1 default profile: "default"
+1277 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.2.Final
+2523 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2637 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
+4616 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4746 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4934 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+5003 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.5.Final
+5053 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+5217 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+6065 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+6079 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6749 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+7154 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will not secure any request
+8721 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor
+                – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+8736 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Started ServiceTest in 7.871 seconds (JVM running for 9.766)
+8842 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: getUsers
+8872 [main] INFO  com.example.EX18.Service.Service
+                – Find all users
+8881 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:34
+8937 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+8940 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+8950 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+405  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.EX18.Service.ServiceTest], using SpringBootContextLoader
+414  [main] INFO  o.s.t.c.s.AbstractContextLoader
+                – Could not detect default resource locations for test class [com.example.EX18.Service.ServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+415  [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                – Could not detect default configuration classes for test class [com.example.EX18.Service.ServiceTest]: ServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+649  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Found @SpringBootConfiguration com.example.EX18.Ex18Application for test class com.example.EX18.Service.ServiceTest
+856  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+886  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3624da92, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@35fe2125, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@94f6bfb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@34645867, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2484f433, org.springframework.test.context.support.DirtiesContextTestExecutionListener@60b71e8f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1255b1d1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@464649c, org.springframework.test.context.event.EventPublishingTestExecutionListener@7c22d4f, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@5f59185e, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@60bdf15d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@47da3952, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@51e4ccb3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@46e8a539, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@495083a0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5fd62371, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@28a0fd6c]
+1315 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Starting ServiceTest using Java 17.0.3 on vladimir-bohkwax9x with PID 17647 (started by vladimir in /home/vladimir/Downloads/JavaPatternMirea/EX18)
+1316 [main] INFO  c.example.EX18.Service.ServiceTest
+                – No active profile set, falling back to 1 default profile: "default"
+1347 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.2.Final
+2517 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2621 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 80 ms. Found 2 JPA repository interfaces.
+4528 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4662 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4867 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+4951 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.5.Final
+5036 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+5328 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+6329 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+6344 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6720 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+7195 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will not secure any request
+8900 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor
+                – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+8914 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Started ServiceTest in 7.979 seconds (JVM running for 9.904)
+9013 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: getUsers
+9034 [main] INFO  com.example.EX18.Service.Service
+                – Find all users
+9041 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:25
+9094 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+9098 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+9108 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+627  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.EX18.Service.ServiceTest], using SpringBootContextLoader
+641  [main] INFO  o.s.t.c.s.AbstractContextLoader
+                – Could not detect default resource locations for test class [com.example.EX18.Service.ServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+642  [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                – Could not detect default configuration classes for test class [com.example.EX18.Service.ServiceTest]: ServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+884  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Found @SpringBootConfiguration com.example.EX18.Ex18Application for test class com.example.EX18.Service.ServiceTest
+1277 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+1313 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@172ca72b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5bda80bf, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@71e5f61d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2ce86164, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5e8f9e2d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51df223b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@fd46303, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@60d8c0dc, org.springframework.test.context.event.EventPublishingTestExecutionListener@4204541c, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6a62689d, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@4602c2a9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@60fa3495, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3e2822, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@79e18e38, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@29a60c27, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1849db1a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@69c79f09]
+1806 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Starting ServiceTest using Java 17.0.3 on vladimir-bohkwax9x with PID 17745 (started by vladimir in /home/vladimir/Downloads/JavaPatternMirea/EX18)
+1808 [main] INFO  c.example.EX18.Service.ServiceTest
+                – No active profile set, falling back to 1 default profile: "default"
+1839 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.2.Final
+3045 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+3156 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+4979 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+5106 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+5291 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+5365 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.5.Final
+5415 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+5568 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+6363 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+6377 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6705 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+7084 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will not secure any request
+8509 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor
+                – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+8522 [main] INFO  c.example.EX18.Service.ServiceTest
+                – Started ServiceTest in 7.135 seconds (JVM running for 9.812)
+8599 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: saveUser
+8646 [main] INFO  com.example.EX18.Service.Service
+                – User saved: User{id=null, firstName='null', lastName='null', middleName='null', birthDate='null', username='Test', password='null', active=true, password2='null', roles=[USER]}
+8650 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:47
+8699 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: getPosts
+8700 [main] INFO  com.example.EX18.Service.Service
+                – Find all posts
+8702 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:2
+8719 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: getUsers
+8719 [main] INFO  com.example.EX18.Service.Service
+                – Find all users
+8720 [main] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:1
+8747 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+8751 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+8766 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+859  [main] INFO  com.example.EX18.Ex18Application
+                – Starting Ex18Application using Java 17.0.3 on vladimir-bohkwax9x with PID 17839 (/home/vladimir/Downloads/JavaPatternMirea/EX18/target/classes started by vladimir in /home/vladimir/Downloads/JavaPatternMirea/EX18)
+862  [main] INFO  com.example.EX18.Ex18Application
+                – No active profile set, falling back to 1 default profile: "default"
+874  [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.2.Final
+1734 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1794 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+2583 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2593 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2593 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2594 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.58]
+2667 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2667 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1736 ms
+2846 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+2929 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+2987 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3024 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.5.Final
+3162 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3252 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+3944 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+3957 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4582 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4802 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will not secure any request
+5464 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+5479 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+5491 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor
+                – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+5502 [main] INFO  com.example.EX18.Ex18Application
+                – Started Ex18Application in 5.084 seconds (JVM running for 6.348)
+10557 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+10558 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+10559 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+19220 [http-nio-8080-exec-4] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: saveUser
+19309 [http-nio-8080-exec-4] INFO  com.example.EX18.Service.Service
+                – User saved: User{id=18, firstName='null', lastName='null', middleName='null', birthDate='null', username='Degtyarev Vladimir', password='$2a$08$IUBdd//nnzyYxGfMXTeme.o46tEv68ZYj.l92kBLN7Uu/LbdO/03.', active=true, password2='12', roles=[USER]}
+19310 [http-nio-8080-exec-4] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:89
+22886 [http-nio-8080-exec-6] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: loadUserByUsername
+22926 [http-nio-8080-exec-6] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:40
+29000 [http-nio-8080-exec-10] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: getUsers
+29000 [http-nio-8080-exec-10] INFO  com.example.EX18.Service.Service
+                – Find all users
+29013 [http-nio-8080-exec-10] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:13
+31764 [http-nio-8080-exec-2] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: getPosts
+31764 [http-nio-8080-exec-2] INFO  com.example.EX18.Service.Service
+                – Find all posts
+31784 [http-nio-8080-exec-2] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:20
+34096 [http-nio-8080-exec-4] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: getUsers
+34097 [http-nio-8080-exec-4] INFO  com.example.EX18.Service.Service
+                – Find all users
+34104 [http-nio-8080-exec-4] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:7
+38817 [http-nio-8080-exec-5] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: findUser
+38830 [http-nio-8080-exec-5] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:12
+38831 [http-nio-8080-exec-5] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: deleteUser
+38846 [http-nio-8080-exec-5] INFO  com.example.EX18.Service.Service
+                – UserUser{id=17, firstName='null', lastName='null', middleName='null', birthDate='null', username='degtyarev02', password='$2a$08$EjXWFgi359OyjSpTbyTh4.6hLWtRe2rgo4d6nf7Tz4uMSIxRY27v.', active=true, password2='null', roles=[]}delete
+38846 [http-nio-8080-exec-5] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:15
+38859 [http-nio-8080-exec-5] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: getUsers
+38859 [http-nio-8080-exec-5] INFO  com.example.EX18.Service.Service
+                – Find all users
+38864 [http-nio-8080-exec-5] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:5
+38886 [http-nio-8080-exec-6] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: getUsers
+38887 [http-nio-8080-exec-6] INFO  com.example.EX18.Service.Service
+                – Find all users
+38890 [http-nio-8080-exec-6] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:3
+40685 [http-nio-8080-exec-7] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: getUsers
+40686 [http-nio-8080-exec-7] INFO  com.example.EX18.Service.Service
+                – Find all users
+40692 [http-nio-8080-exec-7] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:6
+43269 [http-nio-8080-exec-9] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: getPosts
+43270 [http-nio-8080-exec-9] INFO  com.example.EX18.Service.Service
+                – Find all posts
+43275 [http-nio-8080-exec-9] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:5
+46738 [http-nio-8080-exec-1] INFO  com.example.EX18.Aspect.MainAOP
+                – Method name: getUsers
+46738 [http-nio-8080-exec-1] INFO  com.example.EX18.Service.Service
+                – Find all users
+46742 [http-nio-8080-exec-1] INFO  com.example.EX18.Aspect.MainAOP
+                – Execution time:4
+1332983 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+1332985 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+1332992 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.

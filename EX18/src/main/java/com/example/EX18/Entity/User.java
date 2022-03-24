@@ -131,6 +131,11 @@ public class User implements UserDetails
                 ", lastName='" + lastName + '\'' +
                 ", middleName='" + middleName + '\'' +
                 ", birthDate='" + birthDate + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", active=" + active +
+                ", password2='" + password2 + '\'' +
+                ", roles=" + roles +
                 '}';
     }
 

@@ -3,6 +3,7 @@ package com.example.EX18.Controllers;
 import com.example.EX18.Entity.Role;
 import com.example.EX18.Entity.User;
 import com.example.EX18.Repos.UserRepo;
+import com.example.EX18.Service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -25,8 +26,7 @@ public class InitControllers extends WebMvcConfigurerAdapter {
     UserRepo userRepo;
 
     @Autowired
-    @Lazy
-    private PasswordEncoder passwordEncoder;
+    Service service;
 
 
     @GetMapping("/login")
@@ -66,10 +66,7 @@ public class InitControllers extends WebMvcConfigurerAdapter {
             return "registration";
         }
 
-        user.setActive(true);
-        user.setRoles(Collections.singleton(Role.USER));
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
-        userRepo.save(user);
+        service.saveUser(user);
 
         return "redirect:/login";
 

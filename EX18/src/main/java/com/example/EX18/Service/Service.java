@@ -1,6 +1,7 @@
 package com.example.EX18.Service;
 
 import com.example.EX18.Entity.Post;
+import com.example.EX18.Entity.Role;
 import com.example.EX18.Entity.User;
 import com.example.EX18.Repos.PostRepo;
 import com.example.EX18.Repos.UserRepo;
@@ -9,6 +10,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -17,6 +20,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
+import java.util.Collections;
 import java.util.List;
 
 @Component
@@ -25,6 +29,10 @@ import java.util.List;
 @Transactional
 public class Service {
 
+
+    @Autowired
+    @Lazy
+    private PasswordEncoder passwordEncoder;
 
     @Autowired
     UserRepo userRepo;
@@ -57,8 +65,11 @@ public class Service {
         if (user == null) {
             log.error("User to saved is null");
         } else {
-            log.info("User saved: " + user);
+            user.setActive(true);
+            user.setRoles(Collections.singleton(Role.USER));
+            user.setPassword(passwordEncoder.encode(user.getPassword()));
             userRepo.save(user);
+            log.info("User saved: " + user);
         }
     }
 
