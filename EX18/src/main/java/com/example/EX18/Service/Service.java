@@ -86,7 +86,7 @@ public class Service {
         log.info("User" + user + "delete");
     }
 
-    public User findUser(String id) {
+    public User findUser(Long id) {
         return session.createQuery("select u from User u where u.id=" + id, User.class).getSingleResult();
     }
 
@@ -105,13 +105,14 @@ public class Service {
         return postRepo.findAll();
     }
 
+    @Transactional
     public void savePost(Post post) {
         if (post == null) {
             log.error("Post to save is null");
         } else {
             serviceSender.send("Пост создан " + post.getText());
             postRepo.save(post);
-            log.info("Post " + post + " is delete");
+            log.info("Post " + post + " is create");
         }
     }
 
@@ -126,7 +127,7 @@ public class Service {
         }
     }
 
-    public Post findPost(String id) {
+    public Post findPost(Long id) {
         return session.createQuery("select p from Post p where p.id=" + id, Post.class).getSingleResult();
     }
 }

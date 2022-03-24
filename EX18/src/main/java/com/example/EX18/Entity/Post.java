@@ -1,10 +1,18 @@
 package com.example.EX18.Entity;
 
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+import org.springframework.transaction.annotation.Transactional;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "posts")
-public class Post {
+@Transactional
+public class Post implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -12,7 +20,9 @@ public class Post {
     private String creationDate;
 
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH, CascadeType.REMOVE})
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "author_id")
     private User author;
 

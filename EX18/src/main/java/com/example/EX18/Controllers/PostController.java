@@ -10,7 +10,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.support.SessionStatus;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -50,7 +53,7 @@ public class PostController {
     }
 
     @PostMapping("/posts/{id}")
-    public String deletePost(Model model, @PathVariable String id) {
+    public String deletePost(Model model, @PathVariable Long id) {
         service.deletePost(service.findPost(id));
         List<Post> postList = service.getPosts();
         model.addAttribute("posts", postList);

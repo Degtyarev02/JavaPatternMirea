@@ -28,21 +28,6 @@ public class InitControllers extends WebMvcConfigurerAdapter {
     @Autowired
     Service service;
 
-
-    @GetMapping("/login")
-    public String showForm() {
-        return "login";
-    }
-
-    @PostMapping("/login")
-    public String validateLoginInfo(User user) {
-        User ifExist = userRepo.findByUsername(user.getUsername());
-        if (ifExist == null || !ifExist.getPassword().equals(user.getPassword())) {
-            return "login";
-        }
-        return "redirect:/home";
-    }
-
     @GetMapping("/registration")
     public String registration() {
         return "registration";

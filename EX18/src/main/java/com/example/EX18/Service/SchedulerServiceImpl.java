@@ -17,7 +17,7 @@ public class SchedulerServiceImpl {
     @Autowired
     com.example.EX18.Service.Service service;
 
-    @Scheduled(cron = "0 0 * * * *")
+    @Scheduled(cron = "0 0/30 * * * *")
     public void doScheduledTask() {
         File folder = new File("/home/vladimir/Downloads/JavaPatternMirea/EX18/src/main/java/org/example/EX18/ScheduledFile");
         File[] files = folder.listFiles();

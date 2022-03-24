@@ -16,7 +16,7 @@
     <#list posts as post>
         <div><span>${post.id}: ${post.creationDate} - ${post.text}</span>
             <br>
-            <span>${post.getAuthor().username}</span>
+            <span>${post.author.username!""}</span>
             <form action="/posts/${post.id}" method="post">
                 <button type="submit">Удалить</button>
             </form>

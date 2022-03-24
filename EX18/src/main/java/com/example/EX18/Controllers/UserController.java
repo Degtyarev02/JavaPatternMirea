@@ -27,7 +27,7 @@ public class UserController {
     }
 
     @PostMapping("/users/{id}")
-    public String deleteUsers(Model model, @PathVariable String id) {
+    public String deleteUsers(Model model, @PathVariable Long id) {
         User user = service.findUser(id);
         service.deleteUser(user);
         List<User> users = service.getUsers();

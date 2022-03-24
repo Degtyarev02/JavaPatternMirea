@@ -21,7 +21,7 @@ public class MailSenderService {
     @Async
     public void send(String text) throws MailException {
         SimpleMailMessage mail = new SimpleMailMessage();
-        mail.setTo("loliv13507@siberpay.com");
+        mail.setTo("rinapo2605@jo6s.com");
         mail.setFrom(EMAIL);
         mail.setText(text);
         javaMailSender.send(mail);

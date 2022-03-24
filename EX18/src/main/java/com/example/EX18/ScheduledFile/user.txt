@@ -1,1 +1,0 @@
-User{id=16, firstName='null', lastName='null', middleName='null', birthDate='null'}
