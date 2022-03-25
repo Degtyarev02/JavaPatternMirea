@@ -35,7 +35,7 @@ public class User implements UserDetails, Serializable
     private Set<Role> roles;
 
     @OneToMany(
-            cascade = CascadeType.PERSIST,
+            cascade = {CascadeType.PERSIST, CascadeType.REMOVE},
             fetch = FetchType.EAGER,
             orphanRemoval = true
     )

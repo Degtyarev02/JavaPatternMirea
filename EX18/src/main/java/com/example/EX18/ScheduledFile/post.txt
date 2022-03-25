@@ -1,0 +1,1 @@
+Post{id=73, text='ds', creationDate='24 марта', author=User{id=25, firstName='null', lastName='null', middleName='null', birthDate='null', username='user', password='$2a$08$thE00g1w01LztymVfM7PpeDv4GCBxQC.k23rphS9xOaVUnKbp7oWm', active=true, password2='null', roles=[USER]}}

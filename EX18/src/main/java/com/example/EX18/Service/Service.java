@@ -80,8 +80,12 @@ public class Service {
      */
     public void deleteUser(User user) {
         //Удалим все посты пользователя
-        postRepo.deleteAll(user.getPosts());
+        for (Post post : user.getPosts()) {
+            deletePost(post);
+        }
+        user.getPosts().clear();
         user.getRoles().clear();
+        userRepo.save(user);
         userRepo.delete(user);
         log.info("User" + user + "delete");
     }

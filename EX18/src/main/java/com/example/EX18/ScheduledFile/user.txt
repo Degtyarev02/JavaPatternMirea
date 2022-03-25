@@ -1,0 +1,2 @@
+User{id=25, firstName='null', lastName='null', middleName='null', birthDate='null', username='user', password='$2a$08$thE00g1w01LztymVfM7PpeDv4GCBxQC.k23rphS9xOaVUnKbp7oWm', active=true, password2='null', roles=[USER]}
+User{id=26, firstName='null', lastName='null', middleName='null', birthDate='null', username='degtyarev02', password='$2a$08$drF8j3flqNlZnW7LK4VXaehYNarO4isKdgUukY7JLwCiLZH.w24Rm', active=true, password2='null', roles=[USER]}
